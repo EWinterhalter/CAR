@@ -1,0 +1,37 @@
+
+.t1 {
+    height: 0;
+    width: 200px;
+    border-bottom: 120px solid #ff8968;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.t2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(46, 46, 46);
+    margin-top: 0px;
+    margin-left: 60px;
+    display:inline-block;
+   
+}
+.obj {
+  position: absolute;
+    margin-top: 300px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-timing-function: linear infinite;
+    animation-fill-mode:forwards;
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100vw - 18vw));
+    /*transform: translateX(calc(100vw - 50px));*/
+  }
+}
